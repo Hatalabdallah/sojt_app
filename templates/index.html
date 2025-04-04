@@ -1,0 +1,1065 @@
+{% extends "base.html" %}
+
+{% block title %}Infronte Agency - Infronte Structured on the Job Training{% endblock %}
+
+{% block content %}
+
+<main>
+    <!--hero start-->
+    <section class="jarallax py-9 hero-agency" data-jarallax data-speed="0.4">
+      <img class="jarallax-img" src="{{ url_for('static', filename='assets/images/landings/agency/agency-hero-img.jpg') }}" alt="agency" />
+      <div class="position-absolute start-0 end-0">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-5 col-lg-7 col-12" data-cue="zoomIn">
+                  <div class="text-center text-lg-start">
+                     <div class="mb-4 text-white-stable">
+                        <h1 class="mb-3 mt-3 display-3 text-white-stable">Empowering Talent</h1>
+                        <p class="lead mb-0">Discover the Freedom of a Future in Tech through Our Structured On the Job Training program. </p>
+
+                     </div>
+
+                     <div class="mb-4 text-white-stable">
+                        <small class="text-uppercase ls-lg">"At Infronte, we don’t just recruit—we transform careers and elevate organizations through innovative Structured 
+                           On-the-Job Training (SOJT) programs."</small>
+                     </div>
+                        <!-- placement -->
+                        <a href="{{ url_for('programs') }}" class="btn btn-primary me-md-2 mb-3 mb-md-0"
+                           aria-controls="offcanvasRight">
+                           Explore SOJT Programs
+                        </a>
+
+                        <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">
+                           Contact Us
+                           <span class="ms-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-window-dock" viewBox="0 0 16 16">
+                                 <path
+                                    d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm4.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                                 <path
+                                    d="M14 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12ZM2 14h12a1 1 0 0 0 1-1V5H1v8a1 1 0 0 0 1 1ZM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2Z" />
+                              </svg>
+                           </span>
+                        </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--hero end-->
+
+   <!--Logo section start-->
+   <!-- <div class="container" data-cue="fadeIn">
+      <div class="row border-top border-bottom">
+         <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" data-cue="zoomIn">
+            <figure class="text-center p-5">
+               <img src="{{ url_for('static', filename='assets/images/award-logo/award-logo-1.svg') }}" alt="award" />
+            </figure>
+         </div>
+         <div class="col-md-4 border-end-md border-bottom border-bottom-md-0" data-cue="zoomIn">
+            <figure class="text-center p-5">
+               <img src="{{ url_for('static', filename='assets/images/award-logo/award-logo-2.svg') }}" alt="award" />
+            </figure>
+         </div>
+         <div class="col-md-4" data-cue="zoomIn">
+            <figure class="text-center p-5">
+               <img src="{{ url_for('static', filename='assets/images/award-logo/award-logo-3.svg') }}" alt="award" />
+            </figure>
+         </div>
+      </div>
+   </div> -->
+   <!--Logo section end-->
+
+   <!--who we are-->
+   <section class="mb-7 py-xl-9 py-5">
+      <div class="container pb-xl-9 pb-5">
+         <div class="row align-items-center g-4">
+            <div class="col-lg-6 col-md-12">
+                  <div class="me-xl-8">
+                     <h1 class="mb-3">What is <span class="text-primary">Structured On-the-Job Training (SOJT)</span></h1>
+                     <strong><p class="lead mb-4">" Learning by Doing, Growing with Purpose "
+                        <p class="mb-6 me-xl-6"></strong>
+                        A hands-on, work-based building method that builds real-world skills, right where the work happens. 
+                        This approach allows individuals to engage directly with their tasks and responsibilities, 
+                        fostering practical experience and immediate application of knowledge. 
+                        By learning in the actual work environment, participants can develop competencies that are directly relevant to their roles, 
+                        ensuring that they are well-prepared for the challenges they may face in their careers.
+                     </p>
+
+                     <p class="lead mb-4">How it Works?
+                        <p class="mb-6 me-xl-6">
+                     <div class="row g-lg-3">
+                        <div class="col-md-6">
+                              <ul class="list-unstyled mb-3">
+                                 <li class="d-flex mb-3">
+                                    <span>
+                                          <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-check-circle-fill text-primary opacity-75"
+                                             viewBox="0 0 16 16">
+                                             <path
+   d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                          </svg>
+                                    </span>
+                                    <span class="ms-2">Real-World Learning <br>
+                                          Gain skills on the Job, not Just in a classroom.</span>
+                                 </li>
+                                 <li class="d-flex">
+                                    <span>
+                                          <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-check-circle-fill text-primary opacity-75"
+                                             viewBox="0 0 16 16">
+                                             <path
+   d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                          </svg>
+                                    </span>
+                                    <span class="ms-2">Continuos Feedback <br> Learn, Improve and Grow with immediate support.</span>
+                                 </li>
+                              </ul>
+                        </div>
+                        <div class="col-md-6">
+                              <ul class="list-unstyled mb-0">
+                                 <li class="d-flex mb-3">
+                                    <span>
+                                          <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-check-circle-fill text-primary opacity-75"
+                                             viewBox="0 0 16 16">
+                                             <path
+   d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                          </svg>
+                                    </span>
+                                    <span class="ms-2">Mentorship Matters <br> Get guided by Experienced Professionals in real time.</span>
+                                 </li>
+                                 <li class="d-flex">
+                                    <span>
+                                          <svg xmlns="http://www.w3.org/2000/svg"
+                                             width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-check-circle-fill text-primary opacity-75"
+                                             viewBox="0 0 16 16">
+                                             <path
+   d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                          </svg>
+                                    </span>
+                                    <span class="ms-2">Job-Ready Fast <br> Build Confidence and Capacity while you work.</span>
+                                 </li>
+                              </ul>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                  <figure>
+                     <img src="{{ url_for('static', filename='assets/images/about-img/about-hero-img.jpg') }}" 
+                        alt="career" class="img-fluid rounded-3" />
+                  </figure>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--who we are-->
+
+
+   <!--Get block card start-->
+   <section class="my-xl-7 py-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-5 col-md-12" style="text-align: center; margin: 0 auto;">
+               <div class="mb-xl-7 mb-5">
+                   <h2 class="mb-3">
+                       Why it
+                       <span class="text-primary">Works?</span>
+                   </h2>
+                   <p class="mb-0">
+                     By focusing on SOJT learning, this approach empowers individuals to 
+                     grow personally and professionally, equipping them with the tools they need to succeed in an ever-evolving world.
+                   </p>
+               </div>
+           </div>
+         </div>
+         <div class="table-responsive-xl">
+            
+            <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
+                     <div class="col-lg-4 col-md-6 col-12">
+                        <div class="p-xl-5">
+                           <div
+                                 class="d-flex align-items-center justify-content-between mb-5">
+                                 <div
+                                    class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white-stable fw-semibold fs-3">
+                                    1</div>
+                                 <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="32" height="32"
+                                       fill="currentColor"
+                                       class="bi bi-arrow-right text-body-tertiary"
+                                       viewBox="0 0 16 16">
+                                       <path fill-rule="evenodd"
+                                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                 </span>
+                           </div>
+               
+                           <h3 class="h4">Structured Step-by-Step Learning</h3>
+                           <p class="mb-0">SOJT provides a clear and organized framework for learning, breaking 
+                              down complex tasks into manageable steps. This structured approach helps individuals 
+                              grasp concepts more effectively and build their skills progressively.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-12">
+                        <div class="p-xl-5">
+                           <div
+                                 class="d-flex align-items-center justify-content-between mb-5">
+                                 <div
+                                    class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white-stable fw-semibold fs-3">
+                                    2</div>
+                                 <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="32" height="32"
+                                       fill="currentColor"
+                                       class="bi bi-arrow-right text-body-tertiary"
+                                       viewBox="0 0 16 16">
+                                       <path fill-rule="evenodd"
+                                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                 </span>
+                           </div>
+               
+                           <h3 class="h4">Aligned with Real Industry Roles</h3>
+                           <p class="mb-0">The training is designed to reflect actual job responsibilities and industry standards. 
+                              By aligning the learning process with real-world roles, participants gain relevant experience that prepares 
+                              them for the specific demands of their careers.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-12">
+                        <div class="p-xl-5">
+                           <div
+                                 class="d-flex align-items-center justify-content-between mb-5">
+                                 <div
+                                    class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white-stable fw-semibold fs-3">
+                                    3</div>
+                                 <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                       width="32" height="32"
+                                       fill="currentColor"
+                                       class="bi bi-arrow-right text-body-tertiary"
+                                       viewBox="0 0 16 16">
+                                       <path fill-rule="evenodd"
+                                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                 </span>
+                           </div>
+               
+                           <h3 class="h4">Ideal for Career Starters & Changers</h3>
+                           <p class="mb-0">SOJT is particularly beneficial for those entering the workforce or transitioning to new careers. 
+                              It equips them with the practical skills and confidence needed to succeed in their new roles, 
+                              making the transition smoother and more effective.</p>
+                        </div>
+                     </div>
+                  
+            </div>
+            <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
+               <div class="col-lg-4 col-md-6 col-12">
+               </div>
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div class="p-xl-5">
+                     <div
+                           class="d-flex align-items-center justify-content-between mb-5">
+                           <div
+                              class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white-stable fw-semibold fs-3">
+                              4</div>
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg"
+                                 width="24" height="24"
+                                 fill="currentColor"
+                                 class="bi bi-check-circle-fill text-success"
+                                 viewBox="0 0 16 16">
+                                 <path
+                                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                              </svg>
+                           </span>
+                     </div>
+         
+                     <h3 class="h4">Boost Performance from Day One</h3>
+                     <p class="mb-0">By focusing on hands-on experience and immediate application of skills, SOJT enables 
+                        individuals to contribute meaningfully from the very start. This immediate impact not only enhances 
+                        individual performance but also benefits the organization as a whole.</p>
+            </div>
+            <!-- Add more slides as needed -->
+               </div>
+
+               <div class="col-lg-4 col-md-6 col-12">
+            <!-- Add more slides as needed -->
+               </div>
+            
+      </div>
+            <!-- <div class="col-lg-4 col-md-6 col-12">
+               <div class="p-xl-5">
+                  <div
+                        class="d-flex align-items-center justify-content-between mb-5">
+                        <div
+                           class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white-stable fw-semibold fs-3">
+                           4</div>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg"
+                              width="24" height="24"
+                              fill="currentColor"
+                              class="bi bi-check-circle-fill text-success"
+                              viewBox="0 0 16 16">
+                              <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                           </svg>
+                        </span>
+                  </div>
+
+                  <h3 class="h4">Boost Performance from Day One</h3>
+                  <p class="mb-0">By focusing on hands-on experience and immediate application of skills, SOJT enables 
+                     individuals to contribute meaningfully from the very start. This immediate impact not only enhances 
+                     individual performance but also benefits the organization as a whole./p>
+               </div>
+            </div> -->
+         </div>
+         <div class="row">
+            <div class="col-lg-12">
+                  <div class="text-center my-5">
+                     <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">Sign Up Now</a>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--Get block card end-->
+
+
+   <!--Project we done start-->
+   <section class="my-xl-9 my-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
+                  <!-- <small class="text-uppercase ls-md fw-semibold">Project we done</small> -->
+
+                  <h2 class="my-3">Explore our <span class="text-primary">SOJT Programs</span></h2>
+                  <p class="mb-0">Join our immersive On-the-Job Training programs designed to equip you with the practical skills
+                    businesses need in today’s fast-evolving digital landscape. Whether your focus is in systems, data, or
+                    software, you’ll gain real-world experience through hands-on projects and collaborative teamwork.
+                    Work within agile environments, solve complex problems, and contribute to building solutions that
+                    drive innovation and efficiency. Develop the mindset and capabilities to thrive in modern, tech-
+                    driven organizations—and take your career to the next level.</p>
+               </div>
+            </div>
+         </div>
+         <div class="table-responsive-lg">
+            <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div data-cue="zoomIn">
+                     <figure class="lift position-relative btn-arrow mb-4">
+                        <a href="{{ url_for('programs') }}">
+                           <img src="{{ url_for('static', filename='assets/images/portfolio/MateekaRoadWise.jpg') }}" alt="portfolio-2" class="img-fluid rounded-3" />
+
+                           <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
+                              <i class="bi bi-arrow-up-right"></i>
+                           </div>
+                        </a>
+                     </figure>
+
+                     <h2 class="lh-base h4">
+                        <a href="{{ url_for('programs') }}" class="text-reset">Mateeka RoadWise</a>
+                     </h2>
+                  </div>
+               </div>
+               <!-- <div class="col-lg-4 col-md-6 col-12">
+                  <div data-cue="zoomIn">
+                     <figure class="lift position-relative btn-arrow mb-4">
+                        <a href="{{ url_for('programs') }}">
+                           <img src="{{ url_for('static', filename='assets/images/portfolio/SigwaCreatveMedia.jpg') }}" alt="portfolio-2" class="img-fluid rounded-3" />
+                           <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
+                              <i class="bi bi-arrow-up-right"></i>
+                           </div>
+                        </a>
+                     </figure>
+
+                     <h2 class="lh-base h4">
+                        <a href="{{ url_for('programs') }}" class="text-reset">Sigwa Creatve Media</a>
+                     </h2>
+                  </div>
+               </div> -->
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div data-cue="zoomIn">
+                     <figure class="lift position-relative btn-arrow mb-4">
+                        <a href="{{ url_for('programs') }}">
+                           <img src="{{ url_for('static', filename='assets/images/portfolio/SavanaGrill.jpg') }}" alt="portfolio-2" class="img-fluid rounded-3" />
+                           <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
+                              <i class="bi bi-arrow-up-right"></i>
+                           </div>
+                        </a>
+                     </figure>
+
+                     <div data-cue="zoomIn">
+                        <h2 class="lh-base h4">
+                           <a href="{{ url_for('programs') }}" class="text-reset">Savannah Grill</a>
+                        </h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div data-cue="zoomIn">
+                     <figure class="lift position-relative btn-arrow mb-4">
+                        <a href="{{ url_for('programs') }}">
+                           <img src="{{ url_for('static', filename='assets/images/portfolio/KilizaWealthManagement.jpg') }}" alt="portfolio-2" class="img-fluid rounded-3" />
+                           <div class="icon-shape icon-lg bg-white rounded-circle icon-arrow shadow-lg">
+                              <i class="bi bi-arrow-up-right"></i>
+                           </div>
+                        </a>
+                     </figure>
+
+                     <div data-cue="zoomIn">
+                        <h2 class="lh-base h4">
+                           <a href="{{ url_for('programs') }}" class="text-reset">Kiliza Wealth Management</a>
+                        </h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-12" data-cue="fadeIn">
+               <div class="text-center my-5">
+                  <a href="{{ url_for('programs') }}" class="btn btn-primary">Explore Programs</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--Project we done end-->
+
+   <!--speak with expert-->
+   <section class="my-9">
+      <div class="container">
+         <div class="row line-pattern bg-primary-gradient rounded-3 p-7 g-0">
+            <div class="col-lg-8 offset-lg-2 z-1">
+                  <div class="text-center py-md-7">
+                     <!-- <p class="text-white-50 px-lg-7 mb-5">
+                        “Whether you’re transitioning from a different field, returning to the workforce, 
+                        or reimagining your future—we help you build a meaningful, sustainable career in Tech.”
+                        - Wasswa SM Founder Infronte
+                     </p> -->
+                     <!-- <h4 class="h1 text-white-stable">At Infronte, we understand that career success isn’t just about 
+                        climbing the ladder—it’s about finding the balance, flexibility, and fulfilment that 
+                        modern professionals seek.</h4> -->
+                        <h3 class="h3 text-white-stable">
+                           “Whether you’re transitioning from a different field, returning to the workforce, or reimagining your future, we help you build a meaningful and sustainable career in tech.” 
+                           <br><span style="font-weight: 800; font-style: italic;">- Wasswa SM, Founder, Infronte.</span>
+                       </h3><br>
+                     <a href="{{ url_for('contact') }}" class="btn btn-dark">Talk to a Mentor</a>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--speak with expert-->
+<!--Testimonial start-->
+<section class="py-xl-9 py-5">
+   <div class="container">
+      <div class="row gy-7 gx-lg-7">
+         <div class="col-lg-6 col-12" data-cue="fadeIn">
+            <div class="d-flex flex-column gap-3 mb-6">
+               <div>
+                  <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M12.5 7.97559H5C4.46957 7.97559 3.96086 8.1863 3.58579 8.56137C3.21071 8.93644 3 9.44515 3 9.97559V17.9756C3 18.506 3.21071 19.0147 3.58579 19.3898C3.96086 19.7649 4.46957 19.9756 5 19.9756H12.5V20.9756C12.5 22.0365 12.0786 23.0539 11.3284 23.804C10.5783 24.5542 9.56087 24.9756 8.5 24.9756C8.23478 24.9756 7.98043 25.0809 7.79289 25.2685C7.60536 25.456 7.5 25.7104 7.5 25.9756C7.5 26.2408 7.60536 26.4952 7.79289 26.6827C7.98043 26.8702 8.23478 26.9756 8.5 26.9756C10.0908 26.9739 11.616 26.3413 12.7408 25.2164C13.8657 24.0915 14.4983 22.5664 14.5 20.9756V9.97559C14.5 9.44515 14.2893 8.93644 13.9142 8.56137C13.5391 8.1863 13.0304 7.97559 12.5 7.97559ZM12.5 17.9756H5V9.97559H12.5V17.9756ZM27 7.97559H19.5C18.9696 7.97559 18.4609 8.1863 18.0858 8.56137C17.7107 8.93644 17.5 9.44515 17.5 9.97559V17.9756C17.5 18.506 17.7107 19.0147 18.0858 19.3898C18.4609 19.7649 18.9696 19.9756 19.5 19.9756H27V20.9756C27 22.0365 26.5786 23.0539 25.8284 23.804C25.0783 24.5542 24.0609 24.9756 23 24.9756C22.7348 24.9756 22.4804 25.0809 22.2929 25.2685C22.1054 25.456 22 25.7104 22 25.9756C22 26.2408 22.1054 26.4952 22.2929 26.6827C22.4804 26.8702 22.7348 26.9756 23 26.9756C24.5908 26.9739 26.116 26.3413 27.2408 25.2164C28.3657 24.0915 28.9983 22.5664 29 20.9756V9.97559C29 9.44515 28.7893 8.93644 28.4142 8.56137C28.0391 8.1863 27.5304 7.97559 27 7.97559ZM27 17.9756H19.5V9.97559H27V17.9756Z"
+                        fill="#8B3DFF" />
+                  </svg>
+               </div>
+               <div>
+                  <h2>Hear from Our Learners</h2>
+                  <p class="mb-0">Beyond industry awards, our greatest recognition comes from the satisfaction of
+                     our Learners.</p>
+               </div>
+            </div>
+            <div class="swiper-container swiper" id="swiper-1" data-pagination-type="" data-speed="400"
+      data-space-between="100" data-pagination="true" data-navigation="false" data-autoplay="true"
+      data-autoplay-delay="3000"
+      data-breakpoints='{"480": {"slidesPerView": 1}, "768": {"slidesPerView": 1}, "1024": {"slidesPerView": 1}}'>
+      <div class="swiper-wrapper pb-6 mx-auto">
+         <div class="swiper-slide" data-cue="zoomIn">
+            <div class="card shadow-sm">
+               <div class="card-body">
+                  <div class="d-flex flex-column gap-4">
+                     <div>
+                        <p class="mb-0 fst-italic lead text-dark">
+                           "Infronte SOJT equipped me with essential cloud architecture skills, 
+                           enhancing my ability to design scalable solutions. A game-changer for my career!"
+                        </p>
+                     </div>
+                     <div class="d-flex align-items-center gap-3">
+                        <div>
+                           <img src="{{ url_for('static', filename='assets/images/avatar/avatar-1.jpg') }}" alt="avatar"
+                              class="avatar avtar-xs rounded-circle" />
+                        </div>
+                        <div>
+                           <h5 class="mb-0">Elliot Graham</h5>
+                           <small>Cloud Architect, Arrow Inc</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-slide" data-cue="zoomIn">
+            <div class="card shadow-sm">
+               <div class="card-body">
+                  <div class="d-flex flex-column gap-4">
+                     <div>
+                        <p class="mb-0 fst-italic lead text-dark">
+                           "The hands-on experience in Infronte SOJT transformed my DevOps skills, 
+                           enabling me to streamline processes and improve collaboration. Highly recommend!"
+                        </p>
+                     </div>
+                     <div class="d-flex align-items-center gap-3">
+                        <div>
+                           <img src="{{ url_for('static', filename='assets/images/avatar/avatar-2.jpg') }}" alt="avatar"
+                              class="avatar avtar-xs rounded-circle" />
+                        </div>
+                        <div>
+                           <h5 class="mb-0">
+                              Michał Nowak</h5>
+                           <small>DevOps Engineer, Aker Systems</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-slide" data-cue="zoomIn">
+            <div class="card shadow-sm">
+               <div class="card-body">
+                  <div class="d-flex flex-column gap-4">
+                     <div>
+                        <p class="mb-0 fst-italic lead text-dark">
+                           "Infronte SOJT provided me with practical data engineering skills that 
+                           allowed me to tackle real-world challenges effectively. It truly elevated 
+                           my expertise!"
+                        </p>
+                     </div>
+                     <div class="d-flex align-items-center gap-3">
+                        <div>
+                           <img src="{{ url_for('static', filename='assets/images/avatar/avatar-4.jpg') }}" alt="avatar"
+                              class="avatar avtar-xs rounded-circle" />
+                        </div>
+                        <div>
+                           <h5 class="mb-0">Segun Akinyemi</h5>
+                           <small>Data Engineer, JPMorgan Chase</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-slide" data-cue="zoomIn">
+            <div class="card shadow-sm">
+               <div class="card-body">
+                  <div class="d-flex flex-column gap-4">
+                     <div>
+                        <p class="mb-0 fst-italic lead text-dark">
+                           "Thanks to Infronte SOJT, I gained vital software development skills and 
+                           confidence to tackle agile Tech projects. It was an invaluable experience!"
+                        </p>
+                     </div>
+                     <div class="d-flex align-items-center gap-3">
+                        <div>
+                           <img src="{{ url_for('static', filename='assets/images/avatar/avatar-4.jpg') }}" alt="avatar"
+                              class="avatar avtar-xs rounded-circle" />
+                        </div>
+                        <div>
+                           <h5 class="mb-0">Ifeoma Brown</h5>
+                           <small>Scrum Master, ING</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Add more slides as needed -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-navigation">
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+      </div>
+   </div>
+         </div>
+         <div class="col-lg-6 col-12" data-cue="fadeIn">
+            <div class="d-flex flex-column gap-3 mb-6">
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                     class="bi bi-trophy text-primary" viewBox="0 0 16 16">
+                     <path
+                        d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z" />
+                  </svg>
+               </div>
+               <div>
+                  <h2>Empowered by Our Clients</h2>
+                  <p class="mb-0">
+                     Our Structured on-Job Training (SOJT) has been birthed through necessity, thanks to the invaluable 
+                     partnerships with the organisations below."</p>
+               </div>
+            </div>
+            <div class="row g-4">
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/Home_Office-Logo.wine.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/Tata.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/DWP.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/HSBC.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/Vodafone.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/SLC.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/MONZO.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/ROBLOX.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-4 col-6 col-md-4" data-cue="zoomIn">
+                  <div class="card card-lift text-center">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <img src="{{ url_for('static', filename='assets/images/landings/it-company/TGI.png') }}"
+                           alt="company" />
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--Testimonial end-->
+<!--Integrate apps start-->
+<section class="my-xl-7 py-5">
+<div class="container">
+ <div class="row">
+     <div class="col-lg-6 offset-lg-3">
+         <div class="text-center mb-7 pb-2">
+             <h2 class="mb-3">Build Real-World Development Skills
+             </h2>
+             <p class="mb-0">
+              During our Structured On-the-Job Training, you'll develop the skills to connect systems and
+              streamline workflows in dynamic business environments. Learn how to work with ready-made tools
+              and frameworks, while also gaining the ability to create tailored solutions for more complex
+              challenges. Through guided, hands-on experience, you'll understand how modern organizations
+              integrate processes and adapt to evolving needs—preparing you to contribute with confidence and
+              creativity from day one.
+             </p>
+         </div>
+     </div>
+ </div>
+ <div class="row mb-7 pb-2 text-center justify-content-center g-0">
+   <div class="col-lg-12 col-12">
+       <div class="marquee" data-cue="slideInLeft">
+           <div class="track">
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/ansible.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Ansible</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/apacheflink.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Flick</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/aws.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Amazon WS</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/azure-icon.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Azure</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/bash-icon.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Bash CLI</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/chef.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Chef</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/confluence.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Confluence</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/docker-icon.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Docker</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/git.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Git</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/github-color.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Github</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/gitlab.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Gitlab</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/grafana.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Grafana</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/hadoop.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Hadoop</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/java.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Java/span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/jenkins.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Jenkins</span>
+               </a>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-12 col-12 px-lg-7">
+       <div class="marquee" data-cue="slideInRight">
+           <div class="track-2">
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/kafka-icon.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span class="ms-1 d-none d-lg-inline-flex">Kafka</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/vscode3.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">VS Code</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/kubernetes.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Kubernets</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/linux-tux.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Linux</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/mongo.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">MongoDB</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/postgresql.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">PostgreSQL</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/powershell-file.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">PowerShell</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/prometheus.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Prometheus</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/puppet-icon.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Puppet</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/python.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Python</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/scala.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Scala</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/terraform.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Terraform</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/travis-ci.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Travis</span>
+               </a>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-12 col-12">
+       <div class="marquee" data-cue="slideInLeft">
+           <div class="track">
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-4.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Slack</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-3.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Tableau</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-15.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Dropbox</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-9.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Jira</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-4.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Slack</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-3.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Tableau</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-15.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Dropbox</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-9.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Jira</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-15.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Dropbox</span>
+               </a>
+               <a href="#"
+                   class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                   <span><img
+                           src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-9.svg') }}"
+                           alt="logo" class="icon-xs" /></span>
+                   <span
+                       class="ms-1 d-none d-lg-inline-flex">Jira</span>
+               </a>
+           </div>
+       </div>
+   </div>
+</div>
+ <!-- <div class="row">
+     <div class="col-lg-12">
+         <div class="text-center">
+             <a href="#" class="btn btn-dark me-4">Get Started</a>
+             <a href="#"
+                 class="icon-link icon-link-hover mt-3 mt-md-0">
+                 <span>See all integrations</span>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                     height="14" fill="currentColor"
+                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                     </path>
+                 </svg>
+             </a>
+         </div>
+     </div>
+ </div> -->
+</div>
+</section>
+<!--Integrate apps end-->
+
+</main>
+
+{% endblock %}

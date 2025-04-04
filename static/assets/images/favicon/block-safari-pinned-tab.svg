@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="150"
+   height="150"
+   viewBox="0 0 150 150"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="block-safari-pinned-tab.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.3788817"
+     inkscape:cx="53.304064"
+     inkscape:cy="30.096852"
+     inkscape:window-width="1600"
+     inkscape:window-height="829"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M 16.500162,50.003371 H 43.256574 L 30.645271,140.49799 H 3.7184367 Z m 1.363384,-29.48318 q 0,-6.476074 4.601421,-10.395803 4.601421,-4.0901524 12.100033,-4.0901524 7.157767,0 11.418342,3.7493061 4.260575,3.5788833 4.260575,9.5436883 0,6.476074 -5.11269,11.077495 -4.942267,4.430998 -11.929611,4.430998 -6.81692,0 -11.077495,-3.919729 -4.260575,-4.090152 -4.260575,-10.395803 z m 50.786015,29.48318 h 24.711335 l -1.874653,12.781725 q 11.588767,-14.997224 28.971907,-14.997224 13.97469,0 21.4733,11.247918 7.66904,11.077495 5.11269,29.994449 l -7.15776,51.467751 h -26.92684 l 6.6465,-48.911406 q 1.36338,-9.202843 -1.87465,-14.14511 -3.06762,-5.11269 -9.71412,-5.11269 -7.32818,0 -12.270452,5.964805 -4.942267,5.964805 -6.476074,16.701455 L 82.79467,140.49799 H 55.867836 Z"
+     id="text2"
+     style="font-style:italic;font-weight:900;font-size:170.423px;line-height:0px;font-family:Kometa;-inkscape-font-specification:'Kometa Heavy Italic';fill:#000000;stroke-width:1.24"
+     transform="scale(0.9805626,1.0198227)"
+     aria-label="in" />
+  <ellipse
+     style="fill:#e61f0b;stroke-width:1.41747"
+     id="path3"
+     cx="33.25893"
+     cy="20.758928"
+     rx="17.633928"
+     ry="16.741074" />
+</svg>

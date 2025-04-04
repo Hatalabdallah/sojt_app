@@ -1,0 +1,623 @@
+{% extends "base.html" %}
+
+{% block title %}Career Tracks - Infronte Structured on the Job Training{% endblock %}
+
+{% block content %}
+ <main>
+   <div class="pattern-square"></div>
+   <!--Pageheader start-->
+   <section class="py-5 py-lg-8">
+      <!--Logo start-->
+   <section class="my-lg-9 my-5"></section>
+   <!--Logo end-->
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+               <div class="text-center">
+                  <small class="text-uppercase ls-md fw-bold text-primary">Career Paths</small>
+                  <h1 class="mt-4">We train tech and data-driven learners</h1>
+                  <p class="lead">At Infronte, we specialize in training our learners for technology and data-driven careers. 
+                     Our programs cater to the following fields.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--Pageheader end-->
+
+   <!--Service start-->
+   <section class="mb-xl-9 my-4">
+      <div class="container">
+         <div class="row g-7">
+            <div class="col-sm-6 col-md-6">
+               <div class>
+                  <div class="position-relative mb-7">
+                     <img src="{{ url_for('static', filename='assets/images/service/service-img-wide-1.jpg') }}" alt="wide"
+                        class="rounded-3 img-fluid" />
+                     <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
+                        <div class="p-3 icon-xl icon-shape rounded bg-primary border border-2 border-white ms-md-10">
+
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-boxes text-white-stable" viewBox="0 0 16 16">
+                              <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"/>
+                            </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="px-lg-4">
+                  <h2 class="mb-3 h3">DevOps & Cloud Engineering</h2>
+                  <p class="mb-5">Optimize, automate, and scale systems for modern software delivery.
+                     Explore how professionals in this area streamline operations and enhance system reliability. Learn
+                     about roles that focus on continuous integration, cloud platforms, and building resilient digital
+                     environments.
+                  </p>
+                  <div class="mb-5">
+                     <a href="{{ url_for('contact') }}" class="icon-link icon-link-hover">
+                        Click to dive into hands-on DevOps and cloud career paths
+                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                         </svg>
+                     </a>
+                 </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6">
+               <div class>
+                  <div class="position-relative mb-7">
+                     <img src="{{ url_for('static', filename='assets/images/service/service-img-wide-2.jpg') }}" alt="wide"
+                        class="rounded-3 img-fluid" />
+                     <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
+                        <div class="p-3 icon-xl icon-shape rounded bg-primary border border-2 border-white ms-md-10">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cloud-arrow-down-fill text-white-stable" viewBox="0 0 16 16">
+                              <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                            </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="px-lg-4">
+                  <h2 class="mb-3 h3">Architecture & Infrastructure</h2>
+                  <p class="mb-5">Design the backbone of secure, scalable technology systems.
+                     This area is perfect if you're interested in creating the big-picture structure of tech systems. From
+                     enterprise platforms to secure frameworks, these roles keep businesses connected, protected, and
+                     running smoothly.
+
+                  </p>
+                  <a href="{{ url_for('contact') }}" class="icon-link icon-link-hover text-success">
+                     Explore roles that shape digital ecosystems
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                     </svg>
+                 </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6">
+               <div class>
+                  <div class="position-relative mb-7">
+                     <img src="{{ url_for('static', filename='assets/images/service/service-img-wide-3.jpg') }}" alt="wide"
+                        class="rounded-3 img-fluid" />
+                     <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
+                        <div class="p-3 icon-xl icon-shape rounded bg-primary border border-2 border-white ms-md-10">
+
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-lock-fill text-white-stable" viewBox="0 0 16 16">
+                              <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                            </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="px-lg-4">
+                  <h2 class="mb-3 h3">Data & Analytics</h2>
+                  <p class="mb-5">
+                     Turn raw data into meaningful insight and strategic decisions.
+                     Discover the power of data-from engineering pipelines to uncovering trends and building visual
+                     dashboards. These roles are essential for businesses aiming to be data-driven and forward-thinking.
+                  </p>
+                  <div class="mb-5">
+                     <a href="{{ url_for('contact') }}" class="icon-link icon-link-hover text-info">
+                        Start your journey into the world of data
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                           class="bi bi-arrow-right" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd"
+                              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                           </path>
+                        </svg>
+                     </a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6">
+               <div class>
+                  <div class="position-relative mb-7">
+                     <img src="{{ url_for('static', filename='assets/images/service/service-img-wide-4.jpg') }}" alt="wide"
+                        class="rounded-3 img-fluid" />
+                     <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
+                        <div class="p-3 icon-xl icon-shape rounded bg-primary border border-2 border-white ms-md-10">
+
+
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gear-fill text-white-stable"" viewBox="0 0 16 16">
+                              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                            </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="px-lg-4">
+                  <h2 class="mb-3 h3">AI & Emerging Technologies</h2>
+                  <p class="mb-5">Innovate with cutting-edge tools that are shaping the future.
+                     If you're excited about intelligent systems, generative tools, and automation, this category is for you.
+                     Explore careers that push boundaries and bring creative tech solutions to life.
+                  </p>
+                  <a href="{{ url_for('contact') }}" class="icon-link icon-link-hover text-warning">
+                     Unleash your potential with AI and next-gen tech
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                     </svg>
+                 </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6">
+               <div class>
+                  <div class="position-relative mb-7">
+                     <img src="{{ url_for('static', filename='assets/images/service/service-img-wide-1.jpg') }}" alt="wide"
+                        class="rounded-3 img-fluid" />
+                     <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
+                        <div class="p-3 icon-xl icon-shape rounded bg-primary border border-2 border-white ms-md-10">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" 
+                           class="bi bi-graph-down-arrow text-white-stable" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5"/>
+                        </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="px-lg-4">
+                  <h2 class="mb-3 h3">Business Analysis & Product Strategy</h2>
+                  <p class="mb-5">Bridge the gap between business needs and technical delivery.
+                     From defining requirements to shaping roadmaps, this category covers roles that ensure the right
+                     solutions are built to meet business goals. Ideal for those who thrive on communication, planning,
+                     and aligning teams.
+                  </p>
+                  <div class="mb-5">
+                     <a href="{{ url_for('contact') }}" class="icon-link icon-link-hover">
+                        Explore how business analysts and product strategists bring clarity to complexity
+                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                         </svg>
+                     </a>
+                 </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6">
+               <div class>
+                  <div class="position-relative mb-7">
+                     <img src="{{ url_for('static', filename='assets/images/service/service-img-wide-3.jpg') }}" alt="wide"
+                        class="rounded-3 img-fluid" />
+                     <div class="position-absolute top-md-100 start-md-0 top-100 start-50 translate-middle">
+                        <div class="p-3 icon-xl icon-shape rounded bg-primary border border-2 border-white ms-md-10">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" 
+                           class="bi bi-database-fill-gear text-white-stable" viewBox="0 0 16 16">
+                              <path d="M8 1c-1.573 0-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4s.875 1.755 1.904 2.223C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777C13.125 5.755 14 5.007 14 4s-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1"/>
+                              <path d="M2 7v-.839c.457.432 1.004.751 1.49.972C4.722 7.693 6.318 8 8 8s3.278-.307 4.51-.867c.486-.22 1.033-.54 1.49-.972V7c0 .424-.155.802-.411 1.133a4.51 4.51 0 0 0-4.815 1.843A12 12 0 0 1 8 10c-1.573 0-3.022-.289-4.096-.777C2.875 8.755 2 8.007 2 7m6.257 3.998L8 11c-1.682 0-3.278-.307-4.51-.867-.486-.22-1.033-.54-1.49-.972V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13h.027a4.55 4.55 0 0 1 .23-2.002m-.002 3L8 14c-1.682 0-3.278-.307-4.51-.867-.486-.22-1.033-.54-1.49-.972V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-1.3-1.905m3.631-4.538c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                            </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="px-lg-4">
+                  <h2 class="mb-3 h3">Project Delivery & Agile Management</h2>
+                  <p class="mb-5">Drive collaboration, timelines, and value throughout the SDLC.
+                     Focus on managing the full lifecycle of projects-coordinating teams, tracking progress, and
+                     delivering results. Roles in this space ensure that ideas move from concept to launch, efficiently and
+                     effectively.
+                  </p>
+                  <a href="{{ url_for('contact') }}" class="icon-link icon-link-hover text-success">
+                     Step into roles that turn plans into delivered outcomes
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                     </svg>
+                 </a>
+              </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--Service end-->
+
+   <!--Project idea start-->
+   <section class="py-lg-8 py-5 bg-gray-900">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+               <div class="row align-items-center">
+                  <div class="col-lg-8 col-md-7">
+                     <div class="text-center text-md-start mb-6 mb-md-0">
+                        <h2 class="text-white-stable">Have a Cool Project idea?</h2>
+                        <p class="mb-0 text-dark-50">Plan to building a new website or web app for startup.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-5">
+                     <div class="text-center">
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary">Start by saying Hi..</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Logo start-->
+   <section class="my-lg-9 my-5"></section>
+   <!--Logo end-->
+   </section>
+   <!--Project idea end-->
+</main>
+
+<!--Integrate apps start-->
+<section class="my-xl-7 py-5">
+   <div class="container">
+     <div class="row">
+         <div class="col-lg-6 offset-lg-3">
+             <div class="text-center mb-7 pb-2">
+                 <h2 class="mb-3">Build Real-World Development Skills
+                 </h2>
+                 <p class="mb-0">
+                  During our Structured On-the-Job Training, you'll develop the skills to connect systems and
+                  streamline workflows in dynamic business environments. Learn how to work with ready-made tools
+                  and frameworks, while also gaining the ability to create tailored solutions for more complex
+                  challenges. Through guided, hands-on experience, you'll understand how modern organizations
+                  integrate processes and adapt to evolving needs—preparing you to contribute with confidence and
+                  creativity from day one.
+                 </p>
+             </div>
+         </div>
+     </div>
+     <div class="row mb-7 pb-2 text-center justify-content-center g-0">
+       <div class="col-lg-12 col-12">
+           <div class="marquee" data-cue="slideInLeft">
+               <div class="track">
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/ansible.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Ansible</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/apacheflink.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Flick</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/aws.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Amazon WS</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/azure-icon.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Azure</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/bash-icon.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Bash CLI</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/chef.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Chef</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/confluence.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Confluence</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/docker-icon.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Docker</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/git.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Git</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/github-color.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Github</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/gitlab.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Gitlab</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/grafana.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Grafana</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/hadoop.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Hadoop</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/java.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Java/span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/jenkins.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Jenkins</span>
+                   </a>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-12 col-12 px-lg-7">
+           <div class="marquee" data-cue="slideInRight">
+               <div class="track-2">
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/kafka-icon.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span class="ms-1 d-none d-lg-inline-flex">Kafka</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/vscode3.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">VS Code</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/kubernetes.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Kubernets</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/linux-tux.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Linux</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/mongo.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">MongoDB</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/postgresql.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">PostgreSQL</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/powershell-file.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">PowerShell</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/prometheus.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Prometheus</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/puppet-icon.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Puppet</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/python.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Python</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/scala.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Scala</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/terraform.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Terraform</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/travis-ci.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Travis</span>
+                   </a>
+               </div>
+           </div>
+       </div>
+       <div class="col-lg-12 col-12">
+           <div class="marquee" data-cue="slideInLeft">
+               <div class="track">
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-4.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Slack</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-3.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Tableau</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-15.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Dropbox</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-9.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Jira</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-4.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Slack</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-3.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Tableau</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-15.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Dropbox</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-9.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Jira</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-15.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Dropbox</span>
+                   </a>
+                   <a href="#"
+                       class="btn btn-light rounded-pill me-1 mb-3 btn-logo btn-lift">
+                       <span><img
+                               src="{{ url_for('static', filename='assets/images/integration-logo/integrate-logo-9.svg') }}"
+                               alt="logo" class="icon-xs" /></span>
+                       <span
+                           class="ms-1 d-none d-lg-inline-flex">Jira</span>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+     <!-- <div class="row">
+         <div class="col-lg-12">
+             <div class="text-center">
+                 <a href="#" class="btn btn-dark me-4">Get Started</a>
+                 <a href="#"
+                     class="icon-link icon-link-hover mt-3 mt-md-0">
+                     <span>See all integrations</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                         height="14" fill="currentColor"
+                         class="bi bi-arrow-right" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd"
+                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                         </path>
+                     </svg>
+                 </a>
+             </div>
+         </div>
+     </div> -->
+   </div>
+   </section>
+   <!--Integrate apps end-->
+   {% endblock %}

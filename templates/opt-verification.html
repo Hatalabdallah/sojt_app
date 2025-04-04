@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from block.codescandy.com/otp-varification-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Mar 2025 09:58:00 GMT -->
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <!-- Favicon icon-->
+   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/images/favicon/apple-touch-icon.png') }}" />
+   <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/images/favicon/favicon-32x32.png') }}" />
+   <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/images/favicon/favicon-16x16.png') }}" />
+   <link rel="manifest" href="{{ url_for('static', filename='assets/images/favicon/site.html') }}" />
+   <link rel="mask-icon" href="{{ url_for('static', filename='assets/images/favicon/block-safari-pinned-tab.svg') }}" color="#8b3dff" />
+   <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/favicon/favicon.ico') }}" />
+   <meta name="msapplication-TileColor" content="#8b3dff" />
+   <meta name="msapplication-config" content="assets/images/favicon/tile.xml" />
+
+   <!-- Color modes -->
+   <script src="{{ url_for('static', filename='assets/js/vendors/color-modes.js') }}"></script>
+
+   <!-- Libs CSS -->
+   <link href="{{ url_for('static', filename='assets/libs/simplebar/dist/simplebar.min.css') }}" rel="stylesheet" />
+   <link href="{{ url_for('static', filename='assets/libs/bootstrap-icons/font/bootstrap-icons.min.css') }}" rel="stylesheet" />
+
+   <!-- Scroll Cue -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='assets/libs/scrollcue/scrollCue.css') }}" />
+
+   <!-- Box icons -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/css/boxicons.min.css') }}" />
+
+   <!-- Theme CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/theme.min.css') }}">
+   <!-- Analytics Code -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HYJW3VT17"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6HYJW3VT17");
+   </script>
+   <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+         c[a] =
+            c[a] ||
+            function () {
+               (c[a].q = c[a].q || []).push(arguments);
+            };
+         t = l.createElement(r);
+         t.async = 1;
+         t.src = "https://www.clarity.ms/tag/" + i;
+         y = l.getElementsByTagName(r)[0];
+         y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "qtmga3xrmk");
+   </script>
+
+   <title>OTP Verification - Infronte Structured on the Job Training</title>
+</head>
+
+<body>
+   <main>
+      <!--Pageheader start-->
+      <div class="position-relative h-100">
+         <div
+            class="container d-flex flex-wrap justify-content-center align-items-center vh-100 w-lg-50 position-lg-absolute">
+            <div class="row justify-content-center">
+               <div class="w-100 align-self-end col-12">
+                  <div class="text-center mb-7">
+                     <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='assets/images/logo/brand-icon.svg') }}" alt="brand" /></a>
+                     <h1 class="mb-1">Password Reset</h1>
+                     <p class="mb-0">
+                        We sent a code to
+                        <a href="#" class="text-inherit">block@example.com</a>
+                     </p>
+                  </div>
+                  <form action="{{ url_for('opt_verification') }}" method="POST">
+                     <div class="d-flex flex-row gap-2 mb-5">
+                        <input type="text" class="form-control inputpass-code" maxlength="1"
+                           oninput="moveToNextInput(this)" />
+                        <input type="text" class="form-control inputpass-code" maxlength="1"
+                           oninput="moveToNextInput(this)" />
+                        <input type="text" class="form-control inputpass-code" maxlength="1"
+                           oninput="moveToNextInput(this)" />
+                        <input type="text" class="form-control inputpass-code" maxlength="1"
+                           oninput="moveToNextInput(this)" />
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="d-grid mb-6">
+                              <button class="btn btn-primary" type="submit">Continue</button>
+                           </div>
+                           <div class="text-center mb-3">
+                              <span>
+                                 Didn't receive the email? Click
+                                 <a href="#">send it again.</a>
+                              </span>
+                           </div>
+                           <div class="text-center">
+                              <a href="{{ url_for('signin') }}" class="icon-link icon-link-hover">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                       d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z">
+                                    </path>
+                                 </svg>
+                                 <span>Back to Login</span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="position-fixed top-0 end-0 w-50 h-100 d-none d-xl-block vh-100"
+            style="background-image: url('{{ url_for('static', filename='assets/images/sign-in/authentication-img.jpg') }}'); background-position: center; background-repeat: no-repeat; background-size: cover">
+         </div>
+      </div>
+      <!--Pageheader end-->
+      <!--Otp varifaction start-->
+      <div class="position-absolute end-0 bottom-0 m-4">
+         <div class="dropdown">
+            <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button"
+               aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+               <i class="bi theme-icon-active"></i>
+               <span class="visually-hidden bs-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
+               <li>
+                  <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                     aria-pressed="false">
+                     <i class="bi theme-icon bi-sun-fill"></i>
+                     <span class="ms-2">Light</span>
+                  </button>
+               </li>
+               <li>
+                  <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                     aria-pressed="false">
+                     <i class="bi theme-icon bi-moon-stars-fill"></i>
+                     <span class="ms-2">Dark</span>
+                  </button>
+               </li>
+               <li>
+                  <button type="button" class="dropdown-item d-flex align-items-center active"
+                     data-bs-theme-value="auto" aria-pressed="true">
+                     <i class="bi theme-icon bi-circle-half"></i>
+                     <span class="ms-2">Auto</span>
+                  </button>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!--Otp varifaction end-->
+   </main>
+   <!-- Libs JS -->
+   <script src="{{ url_for('static', filename='assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='assets/libs/simplebar/dist/simplebar.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='assets/libs/headhesive/dist/headhesive.min.js') }}"></script>
+
+   <!-- Theme JS -->
+   <script src="{{ url_for('static', filename='assets/js/theme.min.js') }}"></script>
+
+</body>
+
+
+<!-- Mirrored from block.codescandy.com/otp-varification-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Mar 2025 09:58:00 GMT -->
+</html>
